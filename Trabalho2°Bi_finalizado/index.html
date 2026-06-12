@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Lista de Exercícios JavaScript</h1>
+        <p>Exercícios de lógica utilizando HTML, CSS e JavaScript.</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>1. Encontre o Triângulo</h2>
+
+            <p>Informe os três lados para verificar se eles formam um triângulo.</p>
+
+            <ul>
+                <li>Equilátero: 3 lados iguais</li>
+                <li>Isósceles: 2 lados iguais</li>
+                <li>Escaleno: 3 lados diferentes</li>
+            </ul>
+
+            <input type="number" id="l1" placeholder="Primeiro lado">
+            <input type="number" id="l2" placeholder="Segundo lado">
+            <input type="number" id="l3" placeholder="Terceiro lado">
+
+            <button onclick="VerificarTriangulo()">Verificar</button>
+
+            <div id="resultado1" class="resultado"></div>
+        </section>
+
+        <section class="card">
+            <h2>2. Calculadora IMC</h2>
+
+            <p>Digite seu peso em quilogramas (kg) e sua altura em metros (m).</p>
+
+            <p><strong>Classificação:</strong></p>
+
+            <ul>
+                <li>Abaixo de 18,5 → Abaixo do peso</li>
+                <li>18,5 a 24,9 → Peso normal</li>
+                <li>25 a 29,9 → Sobrepeso</li>
+                <li>30 a 34,9 → Obesidade grau 1</li>
+                <li>35 a 39,9 → Obesidade grau 2</li>
+                <li>40 ou mais → Obesidade grau 3</li>
+            </ul>
+
+            <input type="number" id="peso" placeholder="Peso (kg)">
+            <input type="number" id="altura" step="0.01" placeholder="Altura (m)">
+
+            <button onclick="CalculoIMC()">Calcular IMC</button>
+
+            <div id="resultado2" class="resultado"></div>
+        </section>
+
+        <section class="card">
+            <h2>3. Calculadora de Impostos</h2>
+
+            <p>Informe o ano de fabricação do veículo e o valor da tabela.</p>
+
+            <ul>
+                <li>Antes de 1990 → Imposto de 1%</li>
+                <li>1990 em diante → Imposto de 1,5%</li>
+            </ul>
+
+            <input type="number" id="ano" placeholder="Ano do veículo">
+            <input type="number" id="valor" placeholder="Valor da tabela">
+
+            <button onclick="CalcularImposto()">Calcular</button>
+
+            <div id="resultado3" class="resultado"></div>
+        </section>
+
+        <section class="card">
+            <h2>4. Calculadora de Salário</h2>
+
+            <p>Informe o código do cargo e o salário atual.</p>
+
+            <table>
+                <tr>
+                    <th>Código</th>
+                    <th>Cargo</th>
+                    <th>Aumento</th>
+                </tr>
+
+                <tr>
+                    <td>101</td>
+                    <td>Gerente</td>
+                    <td>10%</td>
+                </tr>
+
+                <tr>
+                    <td>102</td>
+                    <td>Engenheiro</td>
+                    <td>20%</td>
+                </tr>
+
+                <tr>
+                    <td>103</td>
+                    <td>Técnico</td>
+                    <td>30%</td>
+                </tr>
+            </table>
+
+            <p>Caso o código não exista, será aplicado aumento de 40%.</p>
+
+            <input type="number" id="codigo4" placeholder="Código do cargo">
+            <input type="number" id="salario" placeholder="Salário atual">
+
+            <button onclick="CalcularSalario()">Calcular</button>
+
+            <div id="resultado4" class="resultado"></div>
+        </section>
+                <section class="card">
+            <h2>5. Calculadora de Crédito Bancário</h2>
+
+            <p>
+                Saldo médio é o valor médio que o cliente manteve em sua conta durante o último ano.
+            </p>
+
+            <ul>
+                <li>De R$ 0 a R$ 200 → Sem crédito</li>
+                <li>De R$ 201 a R$ 400 → 20% do saldo médio</li>
+                <li>De R$ 401 a R$ 600 → 30% do saldo médio</li>
+                <li>Acima de R$ 600 → 40% do saldo médio</li>
+            </ul>
+
+            <input type="number" id="saldo" placeholder="Digite o saldo médio">
+
+            <button onclick="CalcularCredito()">Calcular</button>
+
+            <div id="resultado5" class="resultado"></div>
+        </section>
+
+        <section class="card">
+            <h2>6. Lanchonete</h2>
+
+            <p>Escolha o código do produto e informe a quantidade.</p>
+
+            <table>
+                <tr>
+                    <th>Código</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Cachorro Quente</td>
+                    <td>R$ 11,00</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Bauru</td>
+                    <td>R$ 8,50</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Misto Quente</td>
+                    <td>R$ 8,00</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Hambúrguer</td>
+                    <td>R$ 9,00</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Cheeseburger</td>
+                    <td>R$ 10,00</td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>Refrigerante</td>
+                    <td>R$ 4,50</td>
+                </tr>
+            </table>
+
+            <input type="number" id="codigo6" placeholder="Código do produto">
+            <input type="number" id="quantidade" placeholder="Quantidade">
+
+            <button onclick="CalcularPedido()">Calcular</button>
+
+            <div id="resultado6" class="resultado"></div>
+        </section>
+
+        <section class="card">
+            <h2>7. Sistema de Vendas</h2>
+
+            <p>Informe o valor do produto e a forma de pagamento.</p>
+
+            <table>
+                <tr>
+                    <th>Código</th>
+                    <th>Forma de Pagamento</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>À vista em dinheiro ou cheque (10% de desconto)</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>À vista no cartão de crédito (15% de desconto)</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Em 2 vezes sem juros</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Em 2 vezes com acréscimo de 10%</td>
+                </tr>
+            </table>
+
+            <input type="number" id="preco" placeholder="Preço do produto">
+            <input type="number" id="codigo7" placeholder="Código de pagamento">
+
+            <button onclick="CalcularPagamento()">Calcular</button>
+
+            <div id="resultado7" class="resultado"></div>
+        </section>
+
+        <section class="card">
+            <h2>8. Sistema de Pagamentos</h2>
+
+            <p>Informe o nível do professor e a quantidade de horas/aula por semana.</p>
+
+            <table>
+                <tr>
+                    <th>Nível</th>
+                    <th>Valor por Hora/Aula</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>R$ 12,00</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>R$ 17,00</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>R$ 25,00</td>
+                </tr>
+            </table>
+
+            <input type="number" id="nivel" placeholder="Nível (1, 2 ou 3)">
+            <input type="number" id="qtdAula" placeholder="Horas/Aula por semana">
+
+            <button onclick="CalcularSalarioProfessor()">Calcular</button>
+
+            <div id="resultado8" class="resultado"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
