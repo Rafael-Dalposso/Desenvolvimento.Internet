@@ -1,0 +1,58 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tabela{
+    border: 1px solid #DDDDDD;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.Class1{
+   font-size: 18px;
+   color: #003366;
+   font-weight: bold;
+   text-align: center;
+}
+
+.Class2{
+    font-size: 18px;
+    color: #1398BE;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Class3{
+    font-size: 18px;
+    color: #DE9800;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Class4{
+    font-size: 18px;
+    color: #CCCCCC;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Class5{
+    font-size: 18px;
+    color: #C91B04;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Times{
+    font-size: 14px;
+    color: #666666;
+    font-weight: bold;
+}
+
+.P{
+    font-size: 14px;
+    color: black;
+    background-color: #CCCCCC;
+    text-align: Center;
+}
+
